@@ -1,0 +1,250 @@
+/* General Styles for Mobile */
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
+    -webkit-tap-highlight-color: transparent;
+    /* Remove blue highlight on tap */
+}
+
+.app {
+    text-align: center;
+    padding: 0 0px;
+    max-width: 400px;
+    /* Limit max width for mobile */
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Full viewport height */
+}
+
+.loading-logo {
+    width: 150px;
+    /* Adjust size as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-bottom: 10px;
+    /* Space between logo and loading text */
+    margin-top: -30px;
+    /* Adjust this value to move the logo up */
+}
+
+.loading-message {
+    font-size: 24px;
+    /* Adjust font size */
+    color: white;
+    /* Change text color if needed */
+}
+
+.header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 1000;
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.wallet-section {
+    margin-top: 80px;
+    /* Space for the fixed header */
+    padding: 10px;
+    text-align: center;
+    /* Center elements in the wallet section */
+}
+
+.logo-container {
+    margin: 10px 0;
+    /* Space around the logo */
+}
+
+.logo {
+    width: 100px;
+    /* Set desired width */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+
+/* Connect Wallet Button Styles */
+
+.connect-wallet {
+    background-color: #ffffff;
+    /* Change to your desired background color */
+    color: black;
+    /* Change text color if needed */
+    padding: 10px 13px;
+    /* Adjust padding for size */
+    border: none;
+    /* Remove border */
+    border-radius: 15px;
+    /* Adjust this value to increase/decrease curve */
+    font-size: 16px;
+    /* Change the font size as needed */
+    margin-bottom: 15px;
+    margin-top: 0;
+    /* Move button up */
+    transition: background-color 0.3s, transform 0.2s;
+    /* Add transition effects */
+}
+
+.currency {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.currency-name {
+    font-size: 16px;
+}
+
+
+/* Swiper styles */
+
+.swiper-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.item {
+    background-color: #222;
+    padding: 20px;
+    /* Padding around items */
+    border-radius: 15px;
+    /* Rounded corners */
+    color: white;
+    text-align: left;
+    /* Align text to the left */
+    width: 85%;
+    /* Make it take the full width */
+    height: 90px;
+    /* Set a fixed height for the items */
+}
+
+.title {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.text {
+    font-size: 16px;
+    margin: 9px 0;
+    /* Space between text and button */
+}
+
+.action-button {
+    background-color: #ffffff;
+    /* Button background */
+    color: black;
+    /* Button text color */
+    padding: 13px;
+    border: none;
+    border-radius: 20px;
+    /* Increased curvature */
+    cursor: pointer;
+    /* Pointer on hover */
+    transition: background-color 0.3s;
+    /* Transition for background */
+    width: 24%;
+    /* Make it take the full width */
+    height: 40px;
+    /* Set a fixed height for the items */
+}
+
+
+/* Swiper Pagination Styles */
+
+.swiper-pagination {
+    position: relative;
+    /* تأكد من أن النقاط في موضع نسبي */
+    bottom: -40px;
+    /* ارفع النقاط إلى أسفل المهمة */
+    text-align: center;
+    /* لتوسيعها في منتصف الشاشة */
+}
+
+.swiper-pagination-bullet {
+    background-color: rgba(255, 255, 255, 0.5);
+    /* اللون للفقاعات غير النشطة */
+}
+
+.swiper-pagination-bullet-active {
+    background-color: white;
+    /* تغيير لون الفقاعات النشطة */
+}
+
+
+/* Tasks Section */
+
+.tasks {
+    text-align: left;
+    padding: 20px;
+}
+
+
+/* Footer Menu */
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.menu button {
+    background: none;
+    /* Remove background */
+    border: none;
+    /* Remove border */
+    color: white;
+    /* Text color */
+    text-decoration: none;
+    /* No underline */
+    font-size: 14px;
+    /* Same size as before */
+    cursor: pointer;
+    /* Pointer on hover */
+    display: flex;
+    /* Use flexbox for better alignment */
+    flex-direction: column;
+    /* Stack icon above text */
+    align-items: center;
+    /* Center align the items */
+}
+
+.icon {
+    width: 24px;
+    /* Set the desired width */
+    height: 24px;
+    /* Set the desired height */
+    margin-bottom: 5px;
+}
